@@ -112,18 +112,18 @@ body {
 
 }
 
-@media all and (min-width: 1200px) {
-    html, body{
-        height: 100%;
-    }
+
+
+@media all and (min-width: 800px) {
 
 
     .container{
-        max-width: 1100px;
+        max-width: 750px;
         grid-auto-columns: 1fr;
         grid-template-areas: 
-        "one one two five"
-        "three four four five";
+        "one one two"
+        "three four four"
+        "five five five";
     }
 
     .card:nth-child(1){
@@ -145,4 +145,22 @@ body {
     .card:nth-child(5){
         grid-area: five;
     }
+}
+
+
+
+@media all and (min-width: 1200px) {
+    html, body{
+        height: 100%;
+    }
+
+
+    .container{
+        max-width: 1100px;
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        "one one two five"
+        "three four four five";
+    }
+
 }
