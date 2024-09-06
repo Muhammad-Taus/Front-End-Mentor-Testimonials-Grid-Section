@@ -34,7 +34,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Mediqa queries
+- Media queries
 
 ## Author
 
