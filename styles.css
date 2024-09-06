@@ -3,7 +3,7 @@
 
     --clr-moderate-violet: hsl(263, 55%, 52%);
     --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
-    --clr-very-dark-blackish-blue: hsl(219, 29%, 14%;);
+    --clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
     --clr-white: hsl(0, 0%, 100%);
 
     /* Neutral */
@@ -12,10 +12,54 @@
     --clr-light-grayish-blue: hsl(210, 46%, 95%);
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body{
+    /* height: 100%; */
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--clr-white);
+    background-color: var(--clr-light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 332px;
+    margin-block: 32px;
+}
+
+.card{
+    border: 2px solid red;
+    padding: 30px;
+}
+
+.card:nth-child(1){
+    background-color: var(--clr-moderate-violet);
+}
+
+.card-author{
+    display: flex;
+    align-items: center;
+    
+}
+
+.card-author img{
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+}
