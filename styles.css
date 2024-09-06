@@ -9,6 +9,7 @@
     /* Neutral */
 
     --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-light-gray-mt-custom: hsl(0, 1%, 61%);
     --clr-light-grayish-blue: hsl(210, 46%, 95%);
 }
 
@@ -29,6 +30,7 @@ body {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 13px;
     color: var(--clr-white);
     background-color: var(--clr-light-grayish-blue);
     display: flex;
@@ -37,18 +39,41 @@ body {
 }
 
 .container{
-    max-width: 332px;
+    max-width: 330px;
     margin-block: 32px;
+    display: grid;
+    gap: 1.25rem;
 }
 
 .card{
-    border: 2px solid red;
     padding: 30px;
+    border-radius: 10px;
+}
+
+.card h2{
+    font-weight: 500;
+    margin-block: 24px;
+    font-size: 20px;
 }
 
 .card:nth-child(1){
     background-color: var(--clr-moderate-violet);
 }
+
+.card:nth-child(2){
+    background-color: var(--clr-very-dark-grayish-blue);
+}
+
+.card:nth-child(3), .card:nth-child(5){
+    background-color: var(--clr-white);
+    color: var(--clr-very-dark-blackish-blue);
+    
+}
+
+.card:nth-child(4){
+    background-color: var(--clr-very-dark-blackish-blue);
+}
+
 
 .card-author{
     display: flex;
@@ -62,4 +87,22 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30px;
     height: 30px;
+    margin-right: 16px;
+}
+
+.card p, .author-name-title span{
+    color: var(--clr-light-gray);
+    color: var(--clr-light-gray-mt-custom);
+}
+
+.card:first-child .card-author{
+    position: relative;
+} 
+
+.svg{
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 0;
+    top: -28px;
+
 }
