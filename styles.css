@@ -22,9 +22,7 @@
     box-sizing: border-box;
 }
 
-html, body{
-    /* height: 100%; */
-}
+
 
 body {
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -95,6 +93,13 @@ body {
     color: var(--clr-light-gray-mt-custom);
 }
 
+.card:first-child.quote{
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-size: 115px;
+    background-position: 90% 0;
+    background-repeat: no-repeat;
+}
+
 .card:first-child .card-author{
     position: relative;
 } 
@@ -105,4 +110,39 @@ body {
     right: 0;
     top: -28px;
 
+}
+
+@media all and (min-width: 1200px) {
+    html, body{
+        height: 100%;
+    }
+
+
+    .container{
+        max-width: 1100px;
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        "one one two five"
+        "three four four five";
+    }
+
+    .card:nth-child(1){
+        grid-area: one;
+    }
+    
+    .card:nth-child(2){
+        grid-area: two;
+    }
+    
+    .card:nth-child(3){
+        grid-area: three;
+    }
+    
+    .card:nth-child(4){
+        grid-area: four;
+    }
+
+    .card:nth-child(5){
+        grid-area: five;
+    }
 }
