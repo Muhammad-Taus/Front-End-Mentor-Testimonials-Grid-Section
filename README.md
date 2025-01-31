@@ -23,7 +23,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ### Links
 
 - Solution URL: [Github](https://github.com/Muhammad-Taus/Front-End-Mentor-Testimonials-Grid-Section)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://mt-fem-testimonials-grid-section.netlify.app/)
 
 ## My process
 
